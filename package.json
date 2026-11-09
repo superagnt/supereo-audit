@@ -1,0 +1,46 @@
+{
+  "name": "supereo-audit",
+  "version": "0.2.0",
+  "description": "supereo's plugin and a free AEO audit: skills that run supereo's free AI visibility audit from your agent, read the results, track buyer questions and ship supereo's recommendations, and a CLI and local MCP server for what AI crawlers can read on any page (robots.txt for each AI crawler, the site's llms.txt, the page without JavaScript, what each crawler is served).",
+  "license": "MIT",
+  "author": "superagnt (https://supereo.app)",
+  "homepage": "https://supereo.app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superagnt/supereo-audit.git"
+  },
+  "bugs": "https://github.com/superagnt/supereo-audit/issues",
+  "type": "module",
+  "bin": {
+    "supereo-audit": "bin/supereo-audit.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "skills"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "aeo",
+    "answer-engine-optimization",
+    "generative-engine-optimization",
+    "geo",
+    "ai-visibility",
+    "ai-crawlers",
+    "robots-txt",
+    "llms-txt",
+    "gptbot",
+    "claudebot",
+    "perplexitybot",
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "agent-skills",
+    "claude-skills",
+    "claude-code-plugin",
+    "seo-audit",
+    "supereo"
+  ]
+}

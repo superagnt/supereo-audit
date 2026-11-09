@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "supereo",
+  "owner": {
+    "name": "superagnt",
+    "url": "https://supereo.app"
+  },
+  "description": "supereo's plugin for Claude Code: skills that run supereo's free AI visibility audit and act on it, with supereo's MCP server.",
+  "plugins": [
+    {
+      "name": "supereo",
+      "source": "./",
+      "description": "Skills to run supereo's free AI visibility audit from your agent, read the results, track buyer questions and ship supereo's recommendations, with supereo's MCP server (on Claude, add it as a connector: https://supereo.app/api/mcp); and a free AEO audit of what AI crawlers can read on a page.",
+      "category": "productivity",
+      "keywords": [
+        "aeo",
+        "geo",
+        "ai-visibility",
+        "ai-crawlers",
+        "mcp"
+      ]
+    }
+  ]
+}
