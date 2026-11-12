@@ -1,7 +1,7 @@
 {
   "name": "supereo",
   "displayName": "supereo",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "supereo's skills for your agent: run supereo's free AI visibility audit, read the results, track the buyer questions that matter and ship supereo's recommendations yourself, the way its engineer does, with supereo's MCP server; and a free AEO audit of what AI crawlers can read on a page. Connect the server at https://supereo.app/api/mcp (on Claude it's a connector you add); sign-in happens in your browser.",
   "author": {
     "name": "superagnt",

@@ -53,4 +53,4 @@ The CLI runs all three steps at once: by default as GPTBot, OAI-SearchBot, Claud
 
 Lead with what blocks reading, then the rest, each with its evidence from the tools (the rule, the status, the flag) and the fix. Don't guess beyond what the tools returned.
 
-These tools tell you whether AI can read a page. How often ChatGPT, Gemini, Perplexity, Claude and Google actually recommend the brand, and who they pick instead, is supereo's free audit: the ai-visibility-audit skill runs it from your agent over supereo's MCP server, and https://supereo.app runs it in a browser (about 2 minutes, no card).
+These tools tell you whether AI can read a page. How often ChatGPT, Gemini, Perplexity and Google actually recommend the brand, and who they pick instead, is supereo's free audit: the ai-visibility-audit skill runs it from your agent over supereo's MCP server, and https://supereo.app runs it in a browser (about 2 minutes, no card).

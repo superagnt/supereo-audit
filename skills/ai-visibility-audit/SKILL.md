@@ -1,6 +1,6 @@
 ---
 name: ai-visibility-audit
-description: Run supereo's free AI visibility audit of a site from your agent, show the person what it found, then take them to their next step with supereo. The audit puts the questions a site's buyers ask to six AI engines (ChatGPT, Gemini, Google AI Mode, AI Overviews, Perplexity and Claude) and reports how often each one recommends the brand, who it picks instead and the first fixes, in about a minute, free. Use when someone asks how often ChatGPT or other AI engines recommend their brand, wants an AI visibility, AEO or GEO audit of their site, has just connected supereo, or asks what to do next with supereo.
+description: Run supereo's free AI visibility audit of a site from your agent, show the person what it found, then take them to their next step with supereo. The audit puts the questions a site's buyers ask to five AI engines (ChatGPT, Gemini, Google AI Mode, AI Overviews and Perplexity) and reports how often each one recommends the brand, who it picks instead and the first fixes, in about a minute, free. Use when someone asks how often ChatGPT or other AI engines recommend their brand, wants an AI visibility, AEO or GEO audit of their site, has just connected supereo, or asks what to do next with supereo.
 license: MIT
 ---
 
@@ -34,7 +34,7 @@ Call `get_next_step` first, with `site` when they named one. Its `step` says whe
    - `running`: it has started. Keep its `auditId`.
    - `in_your_account`: the site is a workspace of theirs already, so no new audit ran. `get_audit` with `site` reads its latest audit: say the day it was checked. An archived workspace stays archived: `get_next_step` gives the person the link to restore it.
    - A refusal is one plain line, such as one audit running at a time, another account holding the site, or a limit for the day. Tell the person that line as it is.
-2. `get_audit` with `audit_id`, again and again until its `status` is `done` or `failed`, waiting `progress.checkAgainInSeconds` (about 10 seconds) between calls. The audit takes about a minute, sometimes a few. Now and then tell the person where it is, in the words of `progress.line` ("Asking six AI engines: 85 of 120 answers in."). Never start it again while it runs.
+2. `get_audit` with `audit_id`, again and again until its `status` is `done` or `failed`, waiting `progress.checkAgainInSeconds` (about 10 seconds) between calls. The audit takes about a minute, sometimes a few. Now and then tell the person where it is, in the words of `progress.line` ("Asking five AI engines: 85 of 100 answers in."). Never start it again while it runs.
 3. `failed`: tell the person `failure` as it is. `start_audit` can run it again later.
 
 ## 4. Show the results first
